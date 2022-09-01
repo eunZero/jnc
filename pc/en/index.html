@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=1300, user-scalable=yes" class="viewportwidth">
+		<title>J&C microchem</title>		
+		<link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css"> 							
+		<link rel="stylesheet" type="text/css" href="css/all.min.css"><!--fontawesome-->
+		<link rel="stylesheet" type="text/css" href="css/slick.css"/>				
+		<link rel="stylesheet" type="text/css" href="css/component.css" />	
+	</head>
+	<body>	
+		<div class="main_box">
+			<div class="base_title"><div class="brand">J&C microchem</div>MULTI CATALOG</div>
+			<div class="enter">GO</div>
+			<div class="language_wrap">	
+				<a href="http://microcapsule.co.kr/pc/en" class="language active">ENG</a>					
+				<a href="http://microcapsule.co.kr/pc" class="language ">KOR</a>						
+			</div>
+		</div>
+		<div class="body_cover"></div>
+		<button class="btn_screen expand"><i class="fal fa-expand"></i></button>
+		<span class="screen_notice">크롬,엣지 브라우저에 최적화 되어 있습니다</span>
+		<div class="contents main">
+			<div class="top_wrap">
+				<div class="top">
+					<a href="#" class="bars motion4"><img src="./img/icon_gnb_menu_color.png" alt=""></a>
+				</div>
+			</div>
+				
+			<div class="page_wrap">
+				<img src="./img/main0.png" alt="" class="main0 motion1">
+				<div class="main1">
+					OIL BUBBLE<br>
+					CAPSULE
+				</div>
+				<div class="main2">
+					Experience the most Advanced<br>
+					Encapsulation Technologies!
+				</div>
+				<img src="./img/main1.png" alt="" class="main3">
+				<img src="./img/main2.png" alt="" class="main4">
+				<img src="./img/main3.png" alt="" class="main5">
+				<div class="main6 motion5">
+					Copyright © J&C microchem. 2021
+				</div>
+			</div>
+			
+			<div class="sidebar_contents_wrap">
+				<div class="bg"></div>
+				<div class="contents_wrap">
+					<div class="btn_close_sidebar_wrap"><button class="btn_close_sidebar"><img src="./img/icon_gnb_close.png" alt=""></button></div>
+					<!-- <img src="./img/logo.png" alt="" class="logo"> -->		
+					<div class="sidebar_contents">					
+						<ul class="gnb_list">
+							<li class="active">
+								<a href="index.html#main">HOME</a>
+							</li>
+							<li>
+								<a href="./tech1.html">TECHNOLOGY 1</a>
+							</li><li><a href="./tech2.html">TECHNOLOGY 2</a></li><li><a href="./tech3.html">TECHNOLOGY 3</a></li><li><a href="./application.html">APPLICATION</a></li>
+							
+							<li>
+								<a href="./reference.html">REFERENCE</a>
+							</li>	
+							<li>
+								<a href="./client.html">CLIENT</a>
+							</li>	
+							<li>
+								<a href="./company.html">COMPANY</a>
+							</li>
+															
+							
+						</ul>
+						
+					</div><!-- end.sidebar_contents -->
+					<div class="language_wrap">	
+						<a href="http://microcapsule.co.kr/pc/en/index.html#main" class="language active">ENG</a>					
+						<a href="http://microcapsule.co.kr/pc/index.html#main" class="language">KOR</a>							
+					</div>
+				</div>				
+			</div><!-- end .sidebar_contents_wrap -->			
+			
+			<span class="loading">
+				<div class="lader-dot-wrap">
+					<div class="loader-dot"></div>
+					<div class="loader-dot"></div>
+					<div class="loader-dot"></div>
+					<div class="loader-dot"></div>
+					<div class="loader-dot"></div>
+					<div class="loader-dot"></div>
+					<div class="loader-text"></div>
+				</div>					
+			</span>
+		</div><!-- end .contents -->
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="./vendor/prefixfree.min.js"></script>
+		<script src="./vendor/jquery/jquery-3.5.1.min.js"></script>
+		<script src="./vendor/bootstrap/js/popper.min.js"></script>
+		<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>							
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/common.js"></script>
+		<script>
+			(function(global){
+				
+				
+
+
+				var enter = document.querySelector(".enter");
+				var body_cover = document.querySelector(".body_cover");
+				var show_detail_motion = new TimelineMax({paused:true, onStart:function(){
+				
+				}});
+				var show_motion = new TimelineMax({paused: true, onComplete:function(){
+					show_detail_motion.play();	
+				}});
+				var show_loading = new TimelineMax({paused:true, onComplete:function(){
+					show_detail_motion.play();	
+				}});
+				
+				/* var motion3 = document.querySelector('.motion3');
+				var motion4 = document.querySelector('.motion4');
+				var motion5 = document.querySelector('.motion5');
+
+				show_detail_motion
+				.add('detail')				
+				.fromTo(motion3, 1, {autoAlpha:0}, {autoAlpha:1,ease:Power2.easeInOut},'detail+=0.5')
+				.fromTo(motion4, 1, {autoAlpha:0}, {autoAlpha:1},'detail+=1.0')
+				.fromTo(motion5, 1, {autoAlpha:0}, {autoAlpha:1},'detail+=1.5')
+				; */
+
+				enter.addEventListener("click", function(){
+					show_motion.play();	
+				}, false);
+
+				document.addEventListener("DOMContentLoaded", function(event){
+					var contents = document.querySelector(".contents");
+					var window_W = window.innerWidth;
+					var ratio = 1;
+					var originRatio = 1;
+					if(window_W < 1400){
+						originRatio = 0.8;
+						ratio = window_W/contents.offsetWidth*originRatio;
+					}else{
+						originRatio = 1;
+					}
+						
+					//console.log("contents_box.offsetWidth:"+contents_box.offsetWidth+", originRatio : "+originRatio+" multi : "+contents_box.offsetWidth*originRatio);
+					//console.log("hash : "+window.location.hash);
+					if(window.location.hash == "#main"){ //로고 링크로 들어왔을 때는 등장 모션이 없다.
+						show_motion.set(contents, {autoAlpha:1, scale:ratio*1, immediateRender:true});						
+						show_loading.set('.loading', {autoAlpha:1, immediateRender:true});
+						show_loading
+						.add('fadeOut')
+						.to('.loading',0.7,{autoAlpha:0, ease:Power2.easeOut}, 'fadeOut+=2')
+						;
+						show_loading.play();						
+					}else{
+						show_loading.set('.loading', {autoAlpha:0, immediateRender:true});
+						show_motion
+						.add('fadeInShow')			
+						.fromTo(body_cover, 0.3, {autoAlpha:0}, {autoAlpha:1}, 'fadeInShow')
+						.fromTo(contents, 0.5, {scale:ratio*0},{scale:ratio*0.5,}, 'fadeInShow')
+						.fromTo(contents, 0.7, {autoAlpha:0},{autoAlpha:1}, 'fadeInShow+=0.3')
+						.fromTo(contents, 1.2, {scale:ratio*0.5},{scale:ratio*1}, 'fadeInShow+=0.5')				
+						;
+					}
+				});
+
+			})(window);	
+						
+		</script>
+		
+	</body>
+</html>
