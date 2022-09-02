@@ -174,7 +174,7 @@ table.tech3 tbody td:first-child { border-left:0; }
 .application .section_wrap { display:flex; } 
 .application .section_wrap .section:first-child { padding:0 0 0 70px; } 
 .application .section_wrap .section:last-child { flex:1; flex-shrink:0; width:830px; height:900px; background:#fef8ff; padding:0 70px 0 40px; } 
-.application .section_wrap:first-child .section:first-child { padding:180px 0 0 70px; } 
+.application .section_wrap:first-child .section:first-child { padding:180px 0 0 70px; margin:auto 0;} 
 .application .section_wrap:first-child .section:last-child { flex:1; flex-shrink:0; width:830px; height:900px; background:#fef8ff; padding:180px 70px 0 40px; } 
 .application .section_wrap .title1 { font-weight:500; font-size:28px; color:#666666; } 
 .application .section_wrap .title2 { font-weight:500; font-size:18px; color:#666666; } 
@@ -197,7 +197,7 @@ table.tech3 tbody td:first-child { border-left:0; }
 .reference_list li button { display: block; width:10px; height:100%; cursor: pointer; border: 0; border-radius:10px; outline: 0; background: #d6d6d6; font-size:0; opacity:1; } 
 .reference_list li.slick-active button { width:30px; background:#dd90ff; } 
 
-.client_list { width:100%; margin-top: 50px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap:20px } 
+.client_list { width:100%; margin-top: 70px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap:20px } 
 .client_list { text-align:center; } 
 .client_list > div { display:flex; align-items:flex-start; } 
 .client_list li .box { display: flex; align-items: center; justify-content: center; width:377px; height:97px; border:1px solid #4d2ca7; border-radius:7px; background:#ffffff; } 
