@@ -175,8 +175,8 @@ table.tech3 tbody td:first-child { border-left:0; }
 .application .section_wrap { display:flex; } 
 .application .section_wrap .section:first-child { padding:0 0 0 70px; } 
 .application .section_wrap .section:last-child { flex:1; flex-shrink:0; width:830px; height:900px; background:#fef8ff; padding:0 70px 0 40px; } 
-.application .section_wrap:first-child .section:first-child { padding:180px 0 0 70px; margin:auto 0; } 
-.application .section_wrap:first-child .section:last-child { flex:1; flex-shrink:0; width:830px; height:900px; background:#fef8ff; padding:180px 70px 0 40px; } 
+.application .section_wrap:first-child .section:first-child { flex:1;padding:180px 0 0 70px;  } 
+.application .section_wrap:first-child .section:last-child { flex:1; flex-shrink:0; width:830px; height:100%; background:#fef8ff; padding:180px 70px 90px 40px; } 
 .application .section_wrap .title1 { font-weight:500; font-size:28px; color:#666666; } 
 .application .section_wrap .title2 { font-weight:500; font-size:18px; color:#666666; } 
 .application .section_wrap h3 { font-weight:500; font-size:40px; color:#4d2ca7 } 
