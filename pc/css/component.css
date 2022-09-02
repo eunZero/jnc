@@ -61,7 +61,7 @@ textarea::placeholder { color:#cccccc; }
 .contents .top { display:flex; justify-content:space-between; align-items:center; background:transparent; } 
 .contents.main .top { justify-content:flex-end; } 
 .contents.main .top { justify-content:flex-end; } 
-.contents.main .top p{ font-size: 18px; margin-left: 170px; margin-top: 10px;} 
+.contents.main .top p{ font-size: 18px; margin-left: 170px; cursor: pointer;} 
 .contents.main .top .nav { gap:10px; } 
 .contents.main .top .nav li { font-size: 20px; font-weight: 500; } 
 .contents.main .top .nav li::after { content: "/"; margin-left: 10px; } 
