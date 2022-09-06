@@ -23,7 +23,6 @@
 				<div class="top">
 					<a href="index.html#main" class="back"><img src="./img/icon_prevpage.png" alt=""></a>
 					<div class="d-flex bars align-items-center">
-						<h5 class="pr-4">Menu</h5>
 						<a href="#"><img src="./img/icon_gnb_menu_color.png" alt=""></a>
 					</div>
 				</div>
@@ -185,7 +184,12 @@
 							</div>				
 						</li>
 					</ul><!-- /.reference_list -->
-				
+					<button class="btn_slide_prev">
+						<img src="./img/icon_slide_prev.png" alt="">
+					</button>
+					<button class="btn_slide_next">
+						<img src="./img/icon_slide_next.png" alt="">
+					</button>
 				</div>		
 			</div>	
 		
@@ -252,32 +256,32 @@
 		<script src="js/common.js"></script>	
 		<script src="js/setContentsSizeNLoading.js"></script>
 		<script>
-			// (function($){
-			// 	$(document).ready(function(){					
+			(function($){
+				$(document).ready(function(){					
 					
-			// 		$('.reference_list')
-			// 		.slick({
-			// 			rows:2,
-			// 			slidesPerRow:5,
-			// 			slidesToShow: 1,
-			// 			slidesToScroll: 1,
-			// 			arrows:false,
-			// 			dots: true,
-			// 			swipe:false
-			// 		});						
-			// 		$('.btn_slide_prev').on('click',function(){
-			// 			$(".reference_list").slick('slickPrev');
-			// 		});
-			// 		$('.btn_slide_next').on('click',function(){
-			// 			$(".reference_list").slick('slickNext');
-			// 		});
+					$('.reference_list')
+					.slick({
+						rows:2,
+						slidesPerRow:5,
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						arrows:false,
+						dots: true,
+						swipe:false
+					});						
+					$('.btn_slide_prev').on('click',function(){
+						$(".reference_list").slick('slickPrev');
+					});
+					$('.btn_slide_next').on('click',function(){
+						$(".reference_list").slick('slickNext');
+					});
 					
 					
-			// 	});				
-			// })(jQuery);
-			// ;(function(){
+				});				
+			})(jQuery);
+			;(function(){
 				
-			// })();
+			})();
 
 			
 					

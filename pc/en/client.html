@@ -23,7 +23,6 @@
 				<div class="top">
 					<a href="index.html#main" class="back"><img src="./img/icon_prevpage.png" alt=""></a>
 					<div class="d-flex bars align-items-center">
-						<h5 class="pr-4">Menu</h5>
 						<a href="#"><img src="./img/icon_gnb_menu_color.png" alt=""></a>
 					</div>
 				</div>
@@ -87,8 +86,14 @@
 							<div class="box"><img src="./img/client_9.png" alt=""></div>
 						</li>
 					</ul><!-- /.client_list -->
+					<button class="btn_slide_prev">
+						<img src="./img/icon_slide_prev.png" alt="">
+					</button>
+					<button class="btn_slide_next">
+						<img src="./img/icon_slide_next.png" alt="">
+					</button>
 				</div>
-			</div>	
+			</div>		
 			
 		
 			
@@ -155,7 +160,7 @@
 			(function($){
 				$(document).ready(function(){					
 					
-					$('.client_list1')
+					$('.client_list')
 					.slick({
 						rows:3,
 						slidesPerRow:3,
@@ -166,10 +171,10 @@
 						swipe:false
 					});						
 					$('.btn_slide_prev').on('click',function(){
-						$(".client_list1").slick('slickPrev');
+						$(".client_list").slick('slickPrev');
 					});
 					$('.btn_slide_next').on('click',function(){
-						$(".client_list1").slick('slickNext');
+						$(".client_list").slick('slickNext');
 					});
 					
 					
