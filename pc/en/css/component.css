@@ -120,6 +120,8 @@ textarea::placeholder { color:#cccccc; }
 
 .page_wrap { position:relative; width:100%; height:100%; } 
 .page_wrap .btn_next { position:absolute; bottom:60px; right:70px; font-weight:500; font-size:20px; color:#dd90ff; outline:0; border:0; } 
+.page_wrap .btn_next a{  font-weight:500; font-size:20px; color:#dd90ff; outline:0; border:0; } 
+
 
 .section_wrap.tech1_1 { display:flex; } 
 .section_wrap.tech1_1 .section:first-child { flex-shrink:0; width:700px; height:900px; background:#fef8ff; padding:180px 0 0 70px; } 
