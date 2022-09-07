@@ -35,7 +35,7 @@
  }
  @keyframes fadeIn { 
  from { opacity: 0; transform: translateX(-1000px); } 
- to { opacity: 3; transform: none; } 
+ to { opacity: 1; transform: none; } 
  }
 
 html, body { height:100%; background:#000000; } 
@@ -78,7 +78,9 @@ textarea::placeholder { color:#cccccc; }
 .nav_wrap { position:absolute; bottom:120px; left:115px; } 
 .nav_wrap { gap:10px; } 
 .nav_wrap li { font-size: 18px; background-color: rgb(77, 44, 167, .6); padding:10px; border-radius: 14px; width:142px; text-align: center; } 
+.nav_wrap li:hover {background-color: rgb(77, 44, 167, 1);} 
 .nav_wrap li:first-child { background-color: inherit; width: inherit; } 
+.nav_wrap li:first-child:hover { background-color: none; } 
 .nav_wrap li a { color:#fff; } 
 
 .language_wrap { position:relative; width:140px; display:flex; justify-content:center; align-items:center; height:40px; background:#140a00; border:1px solid #dd90ff; border-radius:25px; } 
